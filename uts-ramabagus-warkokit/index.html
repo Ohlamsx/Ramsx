@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Warkokit - UMKM Kuliner Lokal</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <img src="images/logo.png" alt="Logo Warkokit" class="logo" />
+      <nav>
+        <a href="#produk">Produk</a>
+        <a href="#tentang">Tentang</a>
+        <a href="#kontak">Kontak</a>
+      </nav>
+      <div class="menu-toggle" id="menuToggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </header>
+
+    <section class="hero">
+      <img src="images/hero.jpeg" alt="Hero Kopi" class="hero-img" />
+      <div class="hero-text">
+        <h1>Warkokit</h1>
+        <p>Kopi lokal dengan cita rasa khas nusantara.</p>
+        <button onclick="scrollToProduk()">Lihat Produk</button>
+      </div>
+    </section>
+
+    <section id="produk" class="produk">
+      <h2>Produk Kami</h2>
+      <div class="produk-container">
+        <div class="card">
+          <img src="images/product1.jpeg" alt="Kopi Arabika" />
+          <h3>Kopi Arabika</h3>
+          <p>Rp35.000</p>
+          <button class="btn-beli" onclick="tampilkanPesan('Kopi Arabika')">
+            Beli Sekarang
+          </button>
+        </div>
+
+        <div class="card">
+          <img src="images/product2.jpeg" alt="Kopi Robusta" />
+          <h3>Kopi Robusta</h3>
+          <p>Rp30.000</p>
+          <button class="btn-beli" onclick="tampilkanPesan('Kopi Robusta')">
+            Beli Sekarang
+          </button>
+        </div>
+
+        <div class="card">
+          <img src="images/product3.jpeg" alt="Kopi Latte" />
+          <h3>Kopi Latte</h3>
+          <p>Rp40.000</p>
+          <button class="btn-beli" onclick="tampilkanPesan('Kopi Latte')">
+            Beli Sekarang
+          </button>
+        </div>
+
+        <div class="card">
+          <img src="images/product4.jpeg" alt="Kopi Tubruk" />
+          <h3>Kopi Tubruk</h3>
+          <p>Rp25.000</p>
+          <button class="btn-beli" onclick="tampilkanPesan('Kopi Tubruk')">
+            Beli Sekarang
+          </button>
+        </div>
+
+        <div class="card">
+          <img src="images/product5.jpeg" alt="Kopi Gayo" />
+          <h3>Kopi Gayo</h3>
+          <p>Rp38.000</p>
+          <button class="btn-beli" onclick="tampilkanPesan('Kopi Gayo')">
+            Beli Sekarang
+          </button>
+        </div>
+
+        <div class="card">
+          <img src="images/product6.jpeg" alt="Kopi Toraja" />
+          <h3>Kopi Toraja</h3>
+          <p>Rp42.000</p>
+          <button class="btn-beli" onclick="tampilkanPesan('Kopi Toraja')">
+            Beli Sekarang
+          </button>
+        </div>
+
+        <div class="card">
+          <img src="images/product7.jpeg" alt="Kopi Espresso" />
+          <h3>Kopi Espresso</h3>
+          <p>Rp33.000</p>
+          <button class="btn-beli" onclick="tampilkanPesan('Kopi Espresso')">
+            Beli Sekarang
+          </button>
+        </div>
+
+        <div class="card">
+          <img src="images/product8.jpeg" alt="Kopi Cappuccino" />
+          <h3>Kopi Cappuccino</h3>
+          <p>Rp37.000</p>
+          <button class="btn-beli" onclick="tampilkanPesan('Kopi Cappuccino')">
+            Beli Sekarang
+          </button>
+        </div>
+
+        <div class="card">
+          <img src="images/product9.jpeg" alt="Kopi Mocha" />
+          <h3>Kopi Mocha</h3>
+          <p>Rp39.000</p>
+          <button class="btn-beli" onclick="tampilkanPesan('Kopi Mocha')">
+            Beli Sekarang
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section id="tentang" class="tentang">
+      <h2>Tentang Kami</h2>
+      <div class="about-content">
+        <div class="about-text">
+          <p>
+            Kami adalah UMKM lokal yang berkomitmen menghadirkan kopi terbaik
+            dari petani nusantara. Setiap cangkir diseduh dengan cinta dan bahan
+            pilihan agar menghadirkan rasa autentik khas Indonesia.
+          </p>
+          <p>
+            Dengan pengalaman lebih dari 5 tahun dalam industri kopi, kami
+            memastikan setiap biji kopi melalui proses seleksi yang ketat untuk
+            menjaga kualitas dan cita rasa yang konsisten.
+          </p>
+        </div>
+        <div class="about-image">
+          <img src="images/about.jpg" alt="Tentang Warkokit" />
+        </div>
+      </div>
+    </section>
+
+    <section id="kontak" class="kontak">
+      <h2>Kontak Kami</h2>
+      <div class="kontak-info">
+        <div class="kontak-item">
+          <span class="icon">📧</span>
+          <div>
+            <h3>Email</h3>
+            <p>warkokit@gmail.com</p>
+          </div>
+        </div>
+        <div class="kontak-item">
+          <span class="icon">📱</span>
+          <div>
+            <h3>Instagram</h3>
+            <p>@warkokit.id</p>
+          </div>
+        </div>
+        <div class="kontak-item">
+          <span class="icon">📍</span>
+          <div>
+            <h3>Alamat</h3>
+            <p>Jl. Sudirman No. 45, Bandung</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>© 2025 Warkokit | UMKM Kopi Lokal Indonesia</p>
+    </footer>
+
+    <div id="notification" class="notification"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
